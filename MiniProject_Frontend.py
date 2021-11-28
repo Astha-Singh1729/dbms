@@ -10,7 +10,7 @@ class Movie:
 		self.root=root
 		self.root.title("Online Movie Ticket Booking System")
 		self.root.geometry("1350x750+0+0")
-		self.root.config(bg="black")
+		self.root.config(bg="#151D31")
 
 		Movie_Name=StringVar()
 		Movie_ID=StringVar()
@@ -91,98 +91,98 @@ class Movie:
 				MovieList.insert(END,(Movie_ID.get(),Movie_Name.get(),Release_Date.get(),Director.get(),Cast.get(),Budget.get(),Duration.get(),Rating.get()))
 
 		#Frames
-		MainFrame=Frame(self.root, bg="black")
+		MainFrame=Frame(self.root, bg="#151D31")
 		MainFrame.grid()
 
-		TFrame=Frame(MainFrame, bd=5, padx=54, pady=8, bg="black", relief=RIDGE)
+		TFrame=Frame(MainFrame, bd=5, padx=54, pady=8, bg="#151D31", relief=RIDGE)
 		TFrame.pack(side=TOP)
 
-		self.TFrame=Label(TFrame, font=('Arial', 51, 'bold'), text="ONLINE MOVIE TICKET BOOKING SYSTEM", bg="black", fg="orange")
+		self.TFrame=Label(TFrame, font=('Road Rage', 51, 'bold'), text="ONLINE MOVIE TICKET BOOKING SYSTEM", bg="#151D31", fg="#E6DDC4")
 		self.TFrame.grid()
 
-		BFrame=Frame(MainFrame, bd=2, width=1350, height=70, padx=18, pady=10, bg="black", relief=RIDGE)
+		BFrame=Frame(MainFrame, bd=2, width=1350, height=70, padx=15, pady=10, bg="#151D31", relief=RIDGE)
 		BFrame.pack(side=BOTTOM)
 
-		DFrame=Frame(MainFrame, bd=2, width=1300, height=400, padx=20, pady=20, bg="black", relief=RIDGE)
+		DFrame=Frame(MainFrame, bd=2, width=1300, height=400, padx=20, pady=20, bg="#151D31", relief=RIDGE)
 		DFrame.pack(side=BOTTOM)
 
-		DFrameL=LabelFrame(DFrame, bd=2, width=1000, height=600, padx=20, bg="black", relief=RIDGE, font=('Arial', 20, 'bold'), text="Movie Info_\n", fg="white")
+		DFrameL=LabelFrame(DFrame, bd=2, width=1000, height=600, padx=20, bg="#151D31", relief=RIDGE, font=('Road Rage', 20, 'bold'), text="Movie Info_\n", fg="#F0E9D2")
 		DFrameL.pack(side=LEFT)
 
-		DFrameR=LabelFrame(DFrame, bd=2, width=450, height=300, padx=31, pady=3, bg="black", relief=RIDGE, font=('Arial', 20, 'bold'), text="Movie Details_\n", fg="white")
+		DFrameR=LabelFrame(DFrame, bd=2, width=450, height=300, padx=31, pady=3, bg="#151D31", relief=RIDGE, font=('Road Rage', 20, 'bold'), text="Movie Details_\n", fg="#F0E9D2")
 		DFrameR.pack(side=RIGHT)
 
 		#Labels & Entry Box
 
-		self.lblMovie_ID=Label(DFrameL, font=('Arial', 18, 'bold'), text="Movie ID:", padx=2, pady=2, bg="black", fg="orange")
+		self.lblMovie_ID=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Movie ID:", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblMovie_ID.grid(row=0, column=0, sticky=W)
-		self.txtMovie_ID=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Movie_ID, width=39, bg="black", fg="white")
+		self.txtMovie_ID=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Movie_ID, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtMovie_ID.grid(row=0, column=1)
 
-		self.lblMovie_Name=Label(DFrameL, font=('Arial', 18, 'bold'), text="Movie Name:", padx=2, pady=2, bg="black", fg="orange")
+		self.lblMovie_Name=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Movie Name:", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblMovie_Name.grid(row=1, column=0, sticky=W)
-		self.txtMovie_Name=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Movie_Name, width=39, bg="black", fg="white")
+		self.txtMovie_Name=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Movie_Name, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtMovie_Name.grid(row=1, column=1)
 
-		self.lblRelease_Date=Label(DFrameL, font=('Arial', 18, 'bold'), text="Release Date:", padx=2, pady=2, bg="black", fg="orange")
+		self.lblRelease_Date=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Release Date:", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblRelease_Date.grid(row=2, column=0, sticky=W)
-		self.txtRelease_Date=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Release_Date, width=39, bg="black", fg="white")
+		self.txtRelease_Date=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Release_Date, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtRelease_Date.grid(row=2, column=1)
 
-		self.lblDirector=Label(DFrameL, font=('Arial', 18, 'bold'), text="Director:", padx=2, pady=2, bg="black", fg="orange")
+		self.lblDirector=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Director:", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblDirector.grid(row=3, column=0, sticky=W)
-		self.txtDirector=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Director, width=39, bg="black", fg="white")
+		self.txtDirector=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Director, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtDirector.grid(row=3, column=1)
 
-		self.lblCast=Label(DFrameL, font=('Arial', 18, 'bold'), text="Cast:", padx=2, pady=2, bg="black", fg="orange")
+		self.lblCast=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Cast:", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblCast.grid(row=4, column=0, sticky=W)
-		self.txtCast=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Cast, width=39, bg="black", fg="white")
+		self.txtCast=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Cast, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtCast.grid(row=4, column=1)
 
-		self.lblBudget=Label(DFrameL, font=('Arial', 18, 'bold'), text="Budget (Crores INR):", padx=2, pady=2, bg="black", fg="orange")
+		self.lblBudget=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Budget (Crores INR):", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblBudget.grid(row=5, column=0, sticky=W)
-		self.txtBudget=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Budget, width=39, bg="black", fg="white")
+		self.txtBudget=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Budget, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtBudget.grid(row=5, column=1)
 
-		self.lblDuration=Label(DFrameL, font=('Arial', 18, 'bold'), text="Duration (Hrs):", padx=2, pady=2, bg="black", fg="orange")
+		self.lblDuration=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Duration (Hrs):", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblDuration.grid(row=6, column=0, sticky=W)
-		self.txtDuration=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Duration, width=39, bg="black", fg="white")
+		self.txtDuration=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Duration, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtDuration.grid(row=6, column=1)
 
-		self.lblRating=Label(DFrameL, font=('Arial', 18, 'bold'), text="Rating (Out of 5):", padx=2, pady=2, bg="black", fg="orange")
+		self.lblRating=Label(DFrameL, font=('Road Rage', 15, 'bold'), text="Rating (Out of 5):", padx=2, pady=2, bg="#151D31", fg="#E6DDC4")
 		self.lblRating.grid(row=7, column=0, sticky=W)
-		self.txtRating=Entry(DFrameL, font=('Arial', 18, 'bold'), textvariable=Rating, width=39, bg="black", fg="white")
+		self.txtRating=Entry(DFrameL, font=('Road Rage', 15, 'bold'), textvariable=Rating, width=39, bg="#151D31", fg="#F0E9D2")
 		self.txtRating.grid(row=7, column=1)
 
 		#ListBox & ScrollBar
 		sb=Scrollbar(DFrameR)
 		sb.grid(row=0, column=1, sticky='ns')
 
-		MovieList=Listbox(DFrameR, width=41, height=16, font=('Arial', 12, 'bold'), bg="black", fg="white", yscrollcommand=sb.set)
+		MovieList=Listbox(DFrameR, width=38, height=16, font=('Road Rage', 12, 'bold'), bg="#151D31", fg="#F0E9D2", yscrollcommand=sb.set)
 		MovieList.bind('<<ListboxSelect>>', movierec)
 		MovieList.grid(row=0, column=0, padx=8)
 		sb.config(command=MovieList.yview)
 
 		#Buttons
-		self.btnadd=Button(BFrame, text="Add New", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=adddata)
+		self.btnadd=Button(BFrame, text="Add New", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=adddata)
 		self.btnadd.grid(row=0, column=0)
 
-		self.btndis=Button(BFrame, text="Display", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=disdata)
+		self.btndis=Button(BFrame, text="Display", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=disdata)
 		self.btndis.grid(row=0, column=1)
 
-		self.btnclc=Button(BFrame, text="Clear", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=clcdata)
+		self.btnclc=Button(BFrame, text="Clear", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=clcdata)
 		self.btnclc.grid(row=0, column=2)
 
-		self.btnse=Button(BFrame, text="Search", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=searchdb)
+		self.btnse=Button(BFrame, text="Search", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=searchdb)
 		self.btnse.grid(row=0, column=3)
 
-		self.btndel=Button(BFrame, text="Delete", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=deldata)
+		self.btndel=Button(BFrame, text="Delete", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=deldata)
 		self.btndel.grid(row=0, column=4)
 
-		self.btnup=Button(BFrame, text="Update", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=updata)
+		self.btnup=Button(BFrame, text="Update", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=updata)
 		self.btnup.grid(row=0, column=5)
 
-		self.btnx=Button(BFrame, text="Exit", font=('Arial', 20, 'bold'), width=10, height=1, bd=4, bg="orange", command=iExit)
+		self.btnx=Button(BFrame, text="Exit", font=('Road Rage', 20, 'bold'), width=10, height=1, bd=4, bg="#E6DDC4", command=iExit)
 		self.btnx.grid(row=0, column=6)
 
 
